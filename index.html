@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="shortcut icon" href="imagenes/persona.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encriptar y desencriptar texto</title>
+</head>
+<body>       
+    <header class="header">
+        <img src="imagenes/banner.png" alt="">
+        <p>Challenge Encriptador G5</p>
+    </header>
+
+    <main class="main">
+        <section class="caja">
+            <article class="caja-principal">
+                <textarea id="textoinput" class="caja-input" placeholder="Ingrese el texto aqui"></textarea>                
+                <div class="caja-opciones">                            
+                    <div class="caja-informacion">
+                        <img src="imagenes/information_icon.png" alt="">
+                        <h4>Solo letras minusculas y sin acentos</h4>
+                    </div>
+                    <div class="caja-botones">                        
+                        <button id="encriptarbtn" class="boton-encriptar">Encriptar</button>      
+                        <button id="desencriptarbtn" class="boton-desencriptar">Desencriptar</button>                        
+                    </div>
+                </div>
+            </article>
+
+            <aside id="resultado" class="caja-resultado">
+                <div class="imagen-resultado">
+                    <img id="imagen" src="imagenes/persona.png" alt="Muneco">
+                </div>
+                <div class="texto-resultado">
+                    <div class="texto-princripal">                        
+                        <p id="texto-principal-resultado">Ningun mensaje fue encontrador</p>
+                    </div>
+                    <div class="texto-secundario">
+                        <p id="texto-secundario-resultado">Ingrese el texto que dese encriptar o desencriptar</p>
+                    </div>
+                </div>
+                <div class="caja-copiar">
+                    <button id="copiarbtn" class="boton-copiar">Copiar</button>      
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">        
+        <div class="footer-imagenes">            
+            <a href="https://www.linkedin.com/in/andy-zelaya-palomino-738245217/" target="_blank"><img src="imagenes/linkedin.png"></a>
+            <a href="https://github.com/People2002" target="_blank"><img src="imagenes/github.png"></a>
+            <a href="https://play.google.com/store/apps/details?id=com.azpdev.ulink" target="_blank"><img src="imagenes/google-play.png"></a>
+            <a href="https://app.aluracursos.com/user/a-zelaya-p-j" target="_blank"><img src="imagenes/alura.jpg"></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="script.js"></script>       
+</body>
+</html>
+
